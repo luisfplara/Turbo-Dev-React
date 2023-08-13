@@ -1,0 +1,55 @@
+.introduction{
+
+display: flex;
+flex-direction: column;
+
+align-items: center;
+color: white;
+text-align: center;
+ margin: 0 auto;
+}
+.introduction img{
+    width: clamp(100px, 30vw, 250px);
+    height: auto;
+    border-radius: 50%;
+}
+.description{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: clamp(.8rem, 2vw, 1.3rem);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.description div{
+
+
+  
+}
+
+.quote{
+    display: flex;
+    align-items: end;
+}
+.name{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+
+}
+.tittle{
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: gray
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    gap: 15px;
+}

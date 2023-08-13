@@ -1,0 +1,102 @@
+.projectCard {
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+   
+    color: white;
+    background-color: rgb(39, 39, 39);
+
+    gap: 15px;
+    
+}
+.projectCard:hover {
+    transform: scale(1.02);
+    transition: 1s;
+  }
+
+.projectCard img {
+    width: auto ;
+    height: 35vh;
+ 
+ 
+}
+.contentLeft{
+    display: flex;
+    flex-direction: column;
+  
+    align-items: start;
+    justify-content: space-evenly;
+   
+}
+
+.projectType {
+    
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+ 
+ 
+}
+
+.name{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    padding-bottom: 10px;
+  
+
+}
+.description{
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: clamp(.7rem, 2vw, 1rem);
+    padding-bottom: 10px;
+    
+}
+.description .link{
+    color:#4779e6;
+    padding-top: 3px;
+}
+
+
+.infoStatus{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: clamp(.7rem, 2vw, 1rem);
+
+}
+.infoStatus h4{   
+    margin: 0;
+
+}
+
+
+.infoRelease{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: clamp(.7rem, 2vw, 1rem);
+
+}
+
+.infoRelease h4{   
+    margin: 0;
+
+}
+
+@media (max-width: 500px) {
+    .projectCard{
+
+        flex-direction: column ;
+    }
+}

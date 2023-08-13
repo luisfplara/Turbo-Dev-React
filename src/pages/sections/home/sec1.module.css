@@ -1,0 +1,68 @@
+.content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+
+}
+
+.section div{
+    border: 1px red solid;
+
+}
+
+.contentLeftLiked {
+    display: flex;
+
+    align-items: center;
+
+}
+
+.contentLeftLikedImgs {
+    display: flex;
+    flex-direction: row;
+    margin-right: -15px;
+}
+
+.contentLeftLikedImgs img {
+    position: relative;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+.contentLeft {
+    width: 55%;
+}
+
+.contentLeftButtons {
+    margin-bottom: 30px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contentRight {
+    display: flex;
+    width: 45%;
+}
+@media (max-width: 500px) {
+    .content{
+      flex-direction: column;
+    }
+    .contentLeft {
+        text-align: center;
+        width: 100%;
+    }
+    .contentLeftButtons{
+        justify-content: center;
+    }
+    .contentRight {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .contentLeftLiked{
+
+        display: none;
+    }
+  }

@@ -1,0 +1,135 @@
+.contact {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 70%;
+    height: 60% ;
+    gap: 15px;
+}
+
+.formLeft {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.formLeft form {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+
+}
+
+.formLeft input {
+
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px grey solid;
+    color: white;
+    padding-top: 15px;
+    
+
+
+}
+
+.formLeft input::placeholder {
+    font-style: none;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.formLeft textarea {
+    margin-top: 15px;
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border: 1px grey solid;
+
+    padding-bottom: 35px;
+
+
+}
+
+.formLeft textarea::placeholder {
+    font-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+
+
+}
+
+.checkBoxs {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: gray;
+
+
+
+}
+
+.formRight {
+    display: flex;
+
+    
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    align-items: start;
+
+
+}
+
+.contactLink {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: white;
+    align-items: center;
+    font-size: clamp(10px, 3vw, 15px);
+
+  
+}
+
+@media (max-width: 500px) {
+    .contact {
+
+        flex-direction: column;
+        align-items: center;
+    
+        height: 100%;
+       
+
+    }
+    .formLeft {
+   
+        width: 100%;
+
+    }
+    .formLeft form {
+        gap: 10px;
+    
+    }
+    .formRight{
+        gap: 10px;
+        width: 100%;
+
+    }
+   
+
+  }

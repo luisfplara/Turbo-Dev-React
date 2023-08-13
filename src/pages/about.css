@@ -1,0 +1,17 @@
+.about {
+    margin: 0 auto;
+    overflow-y: scroll;
+
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+
+    height: 100%;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border: 1px red solid;
+}
+
+.about::-webkit-scrollbar {
+    display: none;
+}

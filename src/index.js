@@ -1,18 +1,59 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import Home from './pages/home';
+import Projects from './pages/projects';
+import Blog from './pages/blog';
+import About from './pages/about';
+import Contact from './pages/contact';
 
-import './style.css'
-import Home from './views/home'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-const App = () => {
-  return (
-    <Router>
-      <div>
-        <Route component={Home} exact path="/" />
-      </div>
-    </Router>
-  )
-}
+import Navbar from './components/navbar';
+import { Header } from 'react-fullpage';
 
-ReactDOM.render(<App />, document.getElementById('app'))
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/home",
+    element: <Home />,
+  },
+  {
+    path: "/projects",
+    element: <Projects />,
+  },
+  {
+    path: "/blog",
+    element: <Blog />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+]);
+
+
+// <RouterProvider router={router} />
+root.render(
+  <React.StrictMode>
+    
+    <div className='body'>
+      <Navbar />
+      <RouterProvider router={router} />
+    </div>
+
+
+  </React.StrictMode>
+);

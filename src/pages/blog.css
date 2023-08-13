@@ -1,0 +1,9 @@
+.cards{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+}

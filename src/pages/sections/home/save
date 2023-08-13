@@ -1,0 +1,42 @@
+.home{
+ 
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    
+
+    overflow-y: auto;
+  
+    
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+  
+    height: 100%;
+    
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+
+  
+}
+
+.section {
+    height: 100%;
+  
+    max-width: 1200px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  
+    scroll-snap-align: center;
+  
+    color: white;
+  
+    border: 1px red solid;
+  
+  
+  }
