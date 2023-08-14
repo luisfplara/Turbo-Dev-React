@@ -50,7 +50,7 @@ root.render(
   <React.StrictMode>
     
     <div className='body'>
-      <Navbar />
+      <Navbar router={router}/>
       <RouterProvider router={router} />
     </div>
 

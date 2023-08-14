@@ -4,6 +4,7 @@ import styles from './navbar.module.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import * as React from 'react';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import { Link } from 'react-router-dom';
 export default function Navbar() {
 
     const [state, setState] = React.useState({
@@ -51,7 +52,7 @@ export default function Navbar() {
                     <a href='/'>Home</a>
                     <a href='/projects'>Projects</a>
                     <a href='/blog'>Blog</a>
-                    <a href='/about'>About</a>
+                    <Link to="/about">About</Link>
               
                     <a href='/contact'>
                         <div className= 'std_btn' style={{backgroundColor:'#2A2A2A'}}>
