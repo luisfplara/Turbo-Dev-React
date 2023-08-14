@@ -133,7 +133,8 @@ function Sec2() {
                     mouseTracking
                     items={carousel}
                     disableDotsControls
-                    onSlideChange={syncActiveIndex}
+                    onSlideChange ={syncActiveIndex}
+                    onSlideChanged={syncActiveIndex}
                   
                 />
             </div>
