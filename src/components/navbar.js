@@ -4,6 +4,7 @@ import styles from './navbar.module.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import * as React from 'react';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import { Link } from 'react-router-dom';
 export default function Navbar() {
 
     const [state, setState] = React.useState({
