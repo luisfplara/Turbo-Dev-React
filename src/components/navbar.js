@@ -52,7 +52,7 @@ export default function Navbar() {
                     <a href='/'>Home</a>
                     <a href='/projects'>Projects</a>
                     <a href='/blog'>Blog</a>
-                    <Link to="/about">About</Link>
+                    <a href='/about'>About</a>
               
                     <a href='/contact'>
                         <div className= 'std_btn' style={{backgroundColor:'#2A2A2A'}}>
