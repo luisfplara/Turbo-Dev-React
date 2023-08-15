@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/b779a64a-4e78-481f-a216-40355086a6ae/resourceGroups/turbodev_group-ba40/providers/Microsoft.Web/sites/turbodev",
+    "appService.deploySubpath": "."
+}
