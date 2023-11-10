@@ -108,8 +108,8 @@ const carousel = [
 function Sec2() {
 
     const [activeIndex, setActiveIndex] = useState(0);
-    const syncActiveIndex = ({ item }) => setActiveIndex(item);
-
+    const syncActiveIndex = ({ slide }) => setActiveIndex(slide);
+    console.log(activeIndex);
     return (
         <div className='section'>
 
@@ -132,10 +132,9 @@ function Sec2() {
                     infinite
                     mouseTracking
                     items={carousel}
-                    disableDotsControls
-                    onSlideChange ={syncActiveIndex}
-                    onSlideChanged={syncActiveIndex}
-                  
+                    disableDotsControls                    
+                    onSlideChanged ={syncActiveIndex}
+              
                 />
             </div>
 
